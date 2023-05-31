@@ -1,0 +1,12 @@
+cirrus:
+    images: "E:/MATLAS Data/np_surveys/05"
+    annotations: "E:/MATLAS Data/annotations/consensus"
+cirrus_only:
+    images: "E:/MATLAS Data/np_surveys/05"
+    annotations: "E:/MATLAS Data/annotations/consensus_cirrus_only"
+lsb:
+    images: "E:/MATLAS Data/np_surveys/05"
+    annotations: "E:/MATLAS Data/annotations/consensus"
+instance:
+    images: "E:/MATLAS Data/np_surveys/05_1024"
+    annotations: "E:/MATLAS Data/annotations/instance_combined"

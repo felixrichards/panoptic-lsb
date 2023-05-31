@@ -1,3 +1,6 @@
 *.pyc
 *.pt
 .vscode
+figs/
+models/
+__pycache__/

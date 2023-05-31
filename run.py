@@ -10,7 +10,6 @@ import torch
 import data.training_utils
 from active import update_dataset, create_new_dir
 from figplot import plot_preds
-from data.dataset import LSBInstanceDataset
 from data.training_utils import lsb_datasets, construct_dataset
 from data import class_maps
 from panoptic.optim import create_optim

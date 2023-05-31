@@ -12,10 +12,10 @@ Class maps describe how raw LSB annotations, from the annotation tool, are conve
 
 Segment galaxies, diffuse halos, tidal structures, ghosted halos with MaskRCNN
 ```
-python run.py --model_key=2311Pretrained --class_map=basichalosnocompanions
+python ./run.py --model_key=2311Pretrained --class_map=basichalosnocompanions
 ```
 
 Segment galaxies, diffuse halos, tidal structures, ghosted halos and cirrus with panoptic network (MaskRCNN + Gridded Gabor Attention)
 ```
-python run.py --model_key=2311Pretrained --class_map=basichalosnocompanions
+python ./run.py --model_key=0504PreContaminantGabor --class_map=basichaloscirrusnocompanions
 ```

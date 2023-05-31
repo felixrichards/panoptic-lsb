@@ -150,9 +150,11 @@ def lsb_datasets(class_map, dataset='instance'):
     indices = torch.randperm(int(N * test_p)).tolist()
     test_indices = torch.arange(int(N * test_p), N).tolist()
 
+    image_size = 1024
+
     # define transform
     transform = {
-        'resize': [1024, 1024],
+        'resize': [image_size, image_size],
         'flip': None,
         'rotate': None,
         'noise': {'var_limit': .1, 'p': .8},
@@ -172,7 +174,7 @@ def lsb_datasets(class_map, dataset='instance'):
     dataset_test = construct_dataset(
         idxs=test_indices,
         class_map=class_map,
-        transform={'resize': [1024, 1024]})
+        transform={'resize': [image_size, image_size]})
 
     return dataset_train, dataset_val, dataset_test
 

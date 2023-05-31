@@ -2,10 +2,10 @@ import torch
 
 
 MASK_RCNN_OPTIM_PARAMS = {'lr': 0.01, 'weight_decay': 5e-4, 'momentum': 0.9}
-ATTENTION_OPTIM_PARAMS = {'lr': 1e-3, 'weight_decay': 5e-7}
+ATTENTION_OPTIM_PARAMS = {'lr': 1e-4, 'weight_decay': 5e-7}
 
 MASK_RCNN_LR_SCHEDULER_PARAMS = {'step_size': 25, 'gamma': 0.5}
-ATTENTION_LR_SCHEDULER_PARAMS = {'lr_decay': 0.98}
+ATTENTION_LR_SCHEDULER_PARAMS = {'gamma': 0.98}
 
 
 class PanopticOptimiser(torch.optim.Optimizer):
@@ -22,6 +22,10 @@ class PanopticOptimiser(torch.optim.Optimizer):
     def step(self):
         self.mask_rcnn_optimizer.step()
         self.attention_optimizer.step()
+
+    def zero_grad(self):
+        self.mask_rcnn_optimizer.zero_grad()
+        self.attention_optimizer.zero_grad()
 
 
 class PanopticLRScheduler():

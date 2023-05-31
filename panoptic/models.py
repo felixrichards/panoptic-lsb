@@ -160,8 +160,9 @@ MODELS = {
     '2301PreContaminant': get_pretrained_with_contaminant,
     '2301PreContaminantGabor': get_pretrained_with_gabor_contaminant,
     '0504PreContaminant': get_pretrained_with_alone_contaminant,
-    '0504PreContaminant': get_pretrained_with_alone_gabor_contaminant,
+    '0504PreContaminantGabor': get_pretrained_with_alone_gabor_contaminant,
     '1605PreContaminant': get_pretrained_with_pretrained_alone_contaminant,
+    '1605PreContaminantGabor': get_pretrained_with_pretrained_alone_gabor_contaminant,
 }
 
 

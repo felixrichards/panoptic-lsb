@@ -2,6 +2,24 @@
 
 This repo implements instance & panoptic segmentation on MATLAS data, and a HITL trianing procedure.
 
+## Installation
+
+Install [poetry](https://python-poetry.org/docs/). Run
+```
+poetry install
+```
+
+If you have a GPU,
+```
+poetry run pip install torch==1.10.0+cu111 torchvision==0.11.0+cu111 -f https://download.pytorch.org/whl/torch_stable.html
+```
+
+Otherwise,
+```
+poetry run pip install torch==1.10.0+cpu torchvision==0.11.0+cpu -f https://download.pytorch.org/whl/torch_stable.html
+```
+
+
 ## Class maps
 
 Class maps describe how raw LSB annotations, from the annotation tool, are converted into training labels. All different maps can be found in data/class_maps.py:

@@ -11,7 +11,7 @@ poetry install
 
 If you have a GPU,
 ```
-poetry run pip install torch==1.10.0+cu111 torchvision==0.11.0+cu111 -f https://download.pytorch.org/whl/torch_stable.html
+poetry run pip install torch==1.10.0+cu113 torchvision==0.11.0+cu113 -f https://download.pytorch.org/whl/torch_stable.html
 ```
 
 Otherwise,

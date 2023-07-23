@@ -1,6 +1,6 @@
 ## Overview
 
-This repo implements instance & panoptic segmentation on MATLAS data, and a HITL trianing procedure.
+This repo provides source code for the paper "Panoptic Segmentation of Galactic Structures in LSB Images", implementing instance & panoptic segmentation on MATLAS data, and a HITL training procedure.
 
 ## Installation
 
